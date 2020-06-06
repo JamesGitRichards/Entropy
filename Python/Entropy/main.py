@@ -107,8 +107,6 @@ def Entropy(prob_arr, arr_a):
         SchennonEntropySecond += (-1) * prob * log2(prob)
     Hts += round(SchennonEntropyFirst + SchennonEntropySecond, 3)
 
-    #print("H (thirdparty source) = " + str(round( SchennonEntropyTotal, 3)))
-
     value = 0
     pairs = text_lenght / 2 
     for rows in range(alph_a_lenght):
@@ -122,8 +120,6 @@ def Entropy(prob_arr, arr_a):
         value += (arr_a[rows] / text_lenght_1) * var
     
     H = round(SchennonEntropyFirst + value, 3)
-
-    #print("H = " + str(round(H, 3)))
 
 def main():
     
